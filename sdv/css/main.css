@@ -26,7 +26,7 @@ h1, h2, h3{
 }
 
 h1 {
-    font-size: 30px;  margin: 50px 0px 30px;
+    font-size: 30px;  margin: 50px 0px 27px;
 }
 h2 {
     font-size: 24px; margin: 10px 0px 7px 0px;
@@ -315,7 +315,7 @@ h3 {
     width: 100%;
     max-width: 530px;
     min-width: 530px;
-    margin: 0 auto;
+    margin: -5px auto 0 auto;
 }
 .tabs_block:after {
     content:"";
@@ -323,8 +323,7 @@ h3 {
     clear:both;
 }
 
-.tabs {
-    
+.tabs {    
     margin: 0;
     padding: 0;
     list-style: none;
@@ -355,8 +354,8 @@ h3 {
     border-top: 1px #F9F9F9 solid;
     border-left: 1px #EFEFEF solid;
     border-right: 1px #EFEFEF solid;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     -webkit-filter: grayscale(0);
     filter: grayscale(0); 
 }
@@ -372,9 +371,9 @@ h3 {
     border-bottom: 1px #CFCFCF solid;
     border-left: 1px #EFEFEF solid;
     border-right: 1px #EFEFEF solid;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    border-top-right-radius: 9px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
     width:96%;
     margin-top: 0px;
     padding:5px 2% 6px;
@@ -385,7 +384,7 @@ h3 {
     -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 .box ol {
-    margin: 10px 25px;
+    margin: 6px 25px 15px 25px;
     padding: 0px;
 }
 .box li {
@@ -405,7 +404,7 @@ h3 {
 .tabs li {
     background-image: url(../img/ico_browsers_small.png);
     background-repeat: no-repeat;
-    padding-left: 35px;
+    padding-left: 36px;
     -webkit-filter: grayscale(100%);
      filter: grayscale(100%);
 }
