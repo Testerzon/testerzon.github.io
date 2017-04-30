@@ -24,6 +24,7 @@ h1, h2, h3{
     color: #000;
     padding: 0px;
 }
+
 h1 {
     font-size: 30px;  margin: 50px 0px 30px;
 }
@@ -53,10 +54,12 @@ h3 {
     height: 85px;
     text-align: center;
 }
-.nav {display: block;
+.nav {
+    display: block;
     float: left;
     position: relative; 
-    text-align: center;        
+    text-align: center; 
+    margin: auto -10px;
 }
 
 .nav ul {
@@ -82,7 +85,7 @@ h3 {
     margin: 0px;
     border-left: 1px #44484A solid;
     border-right: 1px #232526 solid;
-    border-top: 3px #3f4345 solid;
+    border-bottom: 3px #373B3D solid;
     background: #3f4345;
     background: -moz-linear-gradient(top, #3f4345 0%, #373B3D 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #3f4345), color-stop(100%, #373B3D));
@@ -94,7 +97,7 @@ h3 {
 }
 
 .nav a:hover {
-    border-top: 3px #F26C4F solid;
+    border-bottom: 3px #ACD373 solid;
     background: #3f4345;
     background: -moz-linear-gradient(top, #303234 0%, #35393B 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #303234), color-stop(100%, #35393B));
@@ -105,8 +108,10 @@ h3 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303234', endColorstr='#35393B', GradientType=0 );
     transition: 0.9s;
 }
+
 .nav a.act {
     border-top: 3px #3A3D3F solid;
+    border-bottom: 0px;
     background: #3A3D3F;
     background: -moz-linear-gradient(top, #3A3D3F 0%, #292B2D 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #3A3D3F), color-stop(100%, #292B2D));
@@ -116,15 +121,18 @@ h3 {
     background: linear-gradient(to bottom, #3A3D3F 0%, #292B2D 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3A3D3F', endColorstr='#292B2D', GradientType=0 );
     }
+
 .nav a.act:before {
-    bottom: 0;
+    top: -3px;
     position: absolute;
     z-index: 2;
     content: "";
     height:3px; width:100%;
     margin-left: -20px;
     background-color:#ACD373;
+    background-color:#F26C4F;
 }
+
 .nav li:first-child a {
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -205,7 +213,17 @@ h3 {
 
 .colored-bg {
     background-color: #F8F8F8;
-    padding:22px 0;}
+    padding: 22px 0;
+    margin-top: 15px;
+    clear: both;
+}
+
+.colored-bg .note {
+    font-size: 12px;
+    text-align: center;
+    color: #747474; 
+    padding: 18px 100px 25px 100px;
+}
 
 .browser {
     text-align: center;    
@@ -247,12 +265,6 @@ h3 {
     color: #008CCC;
 }
  
-.colored-bg .note {
-    font-size: 12px;
-    text-align: center;
-    color: #747474; 
-    padding: 18px 100px 25px 100px;}
-
 .four-blocks {
     clear: both; padding-top: 5px;
 }
@@ -298,7 +310,7 @@ h3 {
     text-decoration: underline;
 }
 
-
+/* tabs */
 .tabs_block {
     width: 100%;
     max-width: 530px;
@@ -310,7 +322,7 @@ h3 {
     display:block;
     clear:both;
 }
-/* tabs */
+
 .tabs {
     
     margin: 0;
@@ -321,20 +333,20 @@ h3 {
 /* tabs list */
 .tabs li {
     font: bold 14px/32px Arial, sans-serif;
-    text-align:center;
-    float:left;
-    padding:4px 21px;
-    background-color:#fff;
-    margin-right:0px;
-    cursor:pointer;
-    color:#000;
+    text-align: center;
+    float: left;
+    padding: 4px 21px;
+    background-color: #fff;
+    margin-right: 0px;
+    cursor: pointer;
+    color: #000;
 }
 .tabs li:hover {
     color:#000; 
     -webkit-filter: grayscale(0);
-     filter: grayscale(0);
-    
+     filter: grayscale(0);  
 }
+
 /* active tab */
 .tabs li.active {
     background-color:#F9F9F9;
@@ -346,8 +358,7 @@ h3 {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     -webkit-filter: grayscale(0);
-     filter: grayscale(0);
-    
+    filter: grayscale(0); 
 }
 
 /* tab content */
@@ -355,19 +366,6 @@ h3 {
 .box {
     font-size: 14px;
     line-height: 20px;
-}
-.box ol {
-    margin: 10px 25px;
-    padding: 0px;
-}
-.box li {
-    padding: 4px 0px;
-}
-.box p {
-    padding: 4px 0px;
-    margin:15px;
-}
-.box {
     font-family: Arial, sans-serif;
     background:#F9F9F9;
     border: 1px #F9F9F9 solid;
@@ -383,11 +381,21 @@ h3 {
     display:none;
     text-align: left;
     float: left;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.box ol {
+    margin: 10px 25px;
+    padding: 0px;
+}
+.box li {
+    padding: 4px 0px;
+}
+.box p {
+    padding: 4px 0px;
+    margin: 15px;
 }
 
-.box p {
-    margin-bottom: 15px;
-}
 /* default tab */
 .visible, .open_tab {
     display: block;
@@ -413,5 +421,3 @@ h3 {
 .tabs .sa {
     background-position: 15px -124px;
 }
-
- 
