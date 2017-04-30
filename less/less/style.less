@@ -28,6 +28,7 @@ height: 100%;
 margin: 0;
 padding: 0;
  }
+
 .clearfix {
 clear: both;
 font-size: 0;
@@ -35,6 +36,7 @@ line-height: 0;
 border: 0;
 outline: none;
 }
+
 .gradient (@start:@color-start, @stop:@color-end)
  {background: @color;
  background-image: -webkit-linear-gradient(top left, @color-start 0%, @color-end 100%);
@@ -83,9 +85,9 @@ text-align: center;
 .login {
 margin:@margin+40px auto;
 position: relative;
-padding: @padding+10px 0;
+padding: @padding+10px;
 padding-bottom: @padding+5px;
-width: 290px;
+max-width: 290px;
 background:@light;
 .bordered;
 .boxshadow;    
@@ -100,8 +102,9 @@ color: @headers-color;
 text-align: center;
 .gradient;
 }
+
 .login p {
-    margin: @margin*0.5;
+    margin: @margin*0.5 0;
 }
 
 .login input[type=text]{
@@ -128,6 +131,7 @@ text-align: center;
     margin-right: 4px;
     vertical-align: middle;
 }
+
 .login p.submit {
     margin:@margin*0.5 0;
     float: left;
@@ -140,7 +144,7 @@ text-align: center;
 .login p.forgot-pass {
     float: right; 
     font-size: @fontsize*0.9; 
-    padding: @padding*0.5 0;
+    padding: @padding*0.4 @padding*0.6;
 }
 
 .login p.forgot-pass a:hover {
@@ -159,7 +163,7 @@ padding: @padding*0.3 0px;
     transition: 0.9s;
     display: inline-block; 
     padding: @padding 0;
-    width: 284px;
+    width: 282px;
     .bordered;
 }
 
@@ -213,5 +217,3 @@ input[type=password]:focus {
 .login .lt-ie9 input[type=text], .lt-ie9 input[type=password] {
     line-height: 34px;
 }
-  
- 
