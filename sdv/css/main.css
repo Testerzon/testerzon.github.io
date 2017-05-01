@@ -238,7 +238,7 @@ h3 {
     padding-top: 125px;
     transition:0.9s;
 }
-.browser:hover {
+.browser a:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
