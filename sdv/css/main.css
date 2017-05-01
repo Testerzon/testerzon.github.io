@@ -232,15 +232,15 @@ h3 {
     float: left;
 }
 .browser a {
-    background-image: url(../img/ico_browsers_large.png);         background-repeat: no-repeat;
+    background-image: url(../img/ico_browsers_large.png);
+    background-repeat: no-repeat;
     display: block;
     padding-top: 125px;
-    
+    transition:0.9s;
 }
 .browser:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: 0.8s;
 }
 .browser-ie {
     background-position: 20px 0px;
