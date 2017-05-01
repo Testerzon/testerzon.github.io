@@ -239,8 +239,8 @@ h3 {
     transition:0.9s;
 }
 .browser a:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(85%);
+    filter: grayscale(85%);
 }
 .browser-ie {
     background-position: 20px 0px;
