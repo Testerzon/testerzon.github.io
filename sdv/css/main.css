@@ -120,7 +120,6 @@ h3 {
     background: -o-linear-gradient(top, #3A3D3F 0%, #292B2D 100%);
     background: -ms-linear-gradient(top, #3A3D3F 0%, #292B2D 100%);
     background: linear-gradient(to bottom, #3A3D3F 0%, #292B2D 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3A3D3F', endColorstr='#292B2D', GradientType=0 );
     }
 
 .nav a.act:before {
