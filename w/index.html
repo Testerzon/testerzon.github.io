@@ -7,11 +7,11 @@
        <style>
            body {margin:0px; padding:0px; font-family:"Helvetica Neue", Helvetica; background-color:#000; font-color:#444; background-image: url(img/111.png); background-position:top center; background-repeat:no-repeat;}
            .br {clear:both;}
-           .main-container {margin:auto; text-align:center;  width:100%; padding-top:360px;}
+           .main-container {margin:auto; text-align:center; width:100%; padding-top:360px;}
            .topmenu {font-size:14px; text-align:left; text-transform:uppercase; margin:25px 0px 0px 0px; height:25px; /*color:#d52673;*/ color:#444;}
            .topmenu a {display:inline block; text-decoration:none; margin:3px 5px; color:#444;}
            .topmenu a:hover {opacity:0.8; transition:0.8;}
-           .goods {margin:10px auto; text-align:center; margin-left:-5px;}
+           .goods {margin:10px auto; text-align:center; max-width:960px;}
            .book-01 { font-size:13px; width:180px; height:285px; margin:5px; text-align:center; border:1px solid #eee; float:left; display:inline-block; }
            .book-01 img {margin:5px auto; height:200px; border:1px #ddd solid;}
            .book-01 b {display:block; padding:2px 0px;}
@@ -28,10 +28,12 @@
  }    </style>
       </head>
     <body>
-    <div class="main-container">
+    <diw class="topmenu-wrap">
 <div class="topmenu"><a href="#polish">Książki po polsku</a>&nbsp;|&nbsp;<a href="#russian">Książki po rosyjsku</a>&nbsp;|&nbsp;<a href="#handmade">Handmade</a>&nbsp;|&nbsp;<a href="#contacts">Kontakt</a></div>
+        </div>
         <div class="br"></div>
-    <div class="goods" id="polish">
+    <div class="main-container">
+        <div class="goods" id="polish">
         <div class="book-01"><img src="img/lalka_01.jpg" title="Lalka, Bolesław Prus"><b>1. Lalka</b><i>Bolesław Prus</i><b>000 rub.</b></div>
         <div class="book-01"><img src="img/sieniewicz_01.jpg"><b>2. Rebelio</b><i>Moriusz Sieniewicz</i></div>
         <div class="book-01"><img src="img/balladyna_01.jpg"><b>3. Balladyna</b><i>Juliusz Słowacki</i></div>  
